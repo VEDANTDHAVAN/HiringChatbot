@@ -80,7 +80,7 @@ export default function Home() {
       
       {/* ElevenLabs Convai AI Agent */}
       {/*<elevenlabs-convai agent-id="9I4k3WF2Y8Mjtq3i68Vq"></elevenlabs-convai>*/}
-      <elevenlabs-convai agent-id="Gc7g1cQwe7QopKieOm6a"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+      <elevenlabs-convai agent-id={agentId}></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     </div>
   );
 }
