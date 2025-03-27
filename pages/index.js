@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { ArrowDown } from "lucide-react";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
 
@@ -40,12 +39,10 @@ export default function Home() {
       <video autoPlay loop muted className={styles.videoBackground}>
         <source src="/videos/background2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
-      <Navbar/>
-      
-      <div ><h1 className="title">Welcome to AI Interview Platform</h1></div>
+      </video>    
+      <div><h1 className={styles.button}>Welcome to AI Interview Platform</h1></div>
       <br/>
-       <p><button><b>Click below to start your AI-powered interview.<br/> 
+       <p><button className={styles.button}><b>Click below to start your AI-powered interview.<br/> 
        <ArrowDown size={40} color="#FFFFFF" />
         </b></button></p>
        <br/>
