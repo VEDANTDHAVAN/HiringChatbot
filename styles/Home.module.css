@@ -91,7 +91,6 @@
 
 /* Chat Window */
 .chatWindow {
-  position: fixed;
   bottom: 20px;
   right: 20px;
   width: 300px;
@@ -106,7 +105,7 @@
 }
 
 .chatHeader {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #41ff54, #2b6eff);
   color: white;
   padding: 10px;
   text-align: center;

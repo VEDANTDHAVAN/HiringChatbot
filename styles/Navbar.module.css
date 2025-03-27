@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: linear-gradient(to right, #dbfbff, #fb2bff);
+    color: white;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .navLinks li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }

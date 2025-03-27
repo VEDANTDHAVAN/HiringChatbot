@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { ArrowDown } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
+
+  const agentId = process.env.NEXT_PUBLIC_AGENT_ID;
   useEffect(() => {
     // Load the ElevenLabs Convai AI script dynamically
     const script = document.createElement("script");
@@ -38,8 +41,9 @@ export default function Home() {
         <source src="/videos/background2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <Navbar/>
       
-      <h1 className="title">Welcome to AI Interview Platform</h1>
+      <div ><h1 className="title">Welcome to AI Interview Platform</h1></div>
       <br/>
        <p><button><b>Click below to start your AI-powered interview.<br/> 
        <ArrowDown size={40} color="#FFFFFF" />
@@ -78,7 +82,8 @@ export default function Home() {
      </div>
       
       {/* ElevenLabs Convai AI Agent */}
-      <elevenlabs-convai agent-id="9I4k3WF2Y8Mjtq3i68Vq"></elevenlabs-convai>
+      {/*<elevenlabs-convai agent-id="9I4k3WF2Y8Mjtq3i68Vq"></elevenlabs-convai>*/}
+      <elevenlabs-convai agent-id="Gc7g1cQwe7QopKieOm6a"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     </div>
   );
 }
